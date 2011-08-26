@@ -1,0 +1,32 @@
+To install, do the following 
+
+1. 'cd' to the directory containing the files and folders. 
+2. Run 'make' in the terminal.
+3. This creates the executable file in the bin/ folder
+
+
+To run the program, 
+	
+	$ bin/cache_simulator <input_file> <configuration_file> <output_file>
+	
+
+A Sample configuration file (conf.conf), sample C program (test2.c) , sample input file (input_file) have been provided.
+
+
+**********************************************************************
+CONFIGURATION FILE DETAILS 
+**********************************************************************
+
+In the configuration file, the necessary parameters need to be defined. 
+	Number of sets : Any positive integer
+	Associativity : Any positive integer
+	Linesize : Any positive integer
+	WritePolicy 
+		1 (for WriteBack)
+		2 (for WriteThrough)
+	ReplacementPolicy
+		1 (for random)
+		2 (for LRU)
+		3 (for FIFO)
+	Cache hit time
+	Cache miss penalty
